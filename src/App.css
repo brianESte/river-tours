@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  background-color: rgb(148, 126, 156);
+  position: relative;
+}
+
+body {
+  padding: 5px;
+  background-color: black;
 }
 
 .App-logo {
@@ -35,4 +42,49 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.selection_box {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 37%;
+  left: 10%;
+  background-color: aliceblue;
+}
+
+.tour_list {
+  border: solid 2px #111111;
+  overflow-y: scroll;
+}
+
+ul{
+  margin: 0;
+  text-align: left;
+  list-style: none;
+  padding-left: 10px;
+}
+
+
+.group_data{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.input_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="number"]{
+  width: 40px;
+}
+
+input[type="radio"]{  display: none;  } 
+input[type="radio"]:checked + label { background-color: rgb(47, 162, 255);  }
+input[type="radio"] + label{
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
 }
